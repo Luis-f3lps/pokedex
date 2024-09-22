@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/scripts.js"></script> 
+
+  <title>Pokédex</title>
+</head>
+<body>
+  
+  <main> <!-- Aqui vai o conteúdo principal -->
+    <img src="#" alt="pokemon" class="pokemon__image"> <!-- Imagem do Pokémon -->
+
+    <h1 class="info_pokemon"> 
+      <span class="numero_pokemon"></span> - <!-- Número do Pokémon -->
+      <span class="nome_pokemon"></span> <!-- Nome do Pokémon -->
+    </h1>
+
+    <form class="form"> <!-- Formulário para pesquisar Pokémon -->
+      <input
+        type="search"
+        class="pesquisa" 
+        placeholder="Nome ou Nº"
+        required 
+      />
+    </form>
+
+    <div class="buttons"> <!-- Botões para navegar entre os Pokémon -->
+      <button class="button anter">Anterior &lt;</button> <!-- Botão para Pokémon anterior -->
+      <button class="button prox">Proximo &gt;</button> <!-- Botão para Pokémon próximo -->
+    </div>
+
+    <div class="detalhes_pokemon"> 
+      <p><strong>Tipos:</strong> <span class="tipo"></span></p>
+      <p><strong>Estatísticas:</strong> <span class="status"></span></p>
+      <p><strong>Habilidades:</strong> <span class="habilidades"></span></p> 
+      <p><strong>Peso:</strong> <span class="peso"></span> kg</p> 
+      <p><strong>Altura:</strong> <span class="Altura"></span> m</p> 
+      <p><strong>Taxa de Captura:</strong> <span class="taxa_captura"></span></p> 
+    </div>
+    
+    <img src="./images/pokedex.png" alt="pokedex" class="pokedex desktop"> <!-- Imagem da Pokédex na tela -->
+    <img src="./images/pokedexMobile.png" alt="pokedex" class="pokedex mobile"> <!-- Imagem da Pokédex para mobile -->
+
+    <div id="gif-overlay">
+      <video id="intro-video" src="./images/pokedexMobile.mp4" autoplay muted>
+        Seu navegador não suporta o vídeo.
+      </video>
+    </div>
+    
+    
+  </main>
+
+</body>
+</html>

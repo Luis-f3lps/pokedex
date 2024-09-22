@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+.pokedex {
+  width: 100%;
+  max-width: 1270px;
+}
+
+.pokemon__image {
+    position: absolute;
+    bottom: 45%;
+    left: 32%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.info_pokemon {
+    position: absolute;
+    font-weight: 600;
+    color: #ffffff;
+    top: 24.5%;
+    right: 65%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon__name {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    top: 26%;
+    left: 60.5%;
+
+}
+
+.pesquisa {
+  padding: 4%;
+  outline: none;
+  width: 350px;
+  font-size: 32px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 50%;
+    left: 75%;
+    width: 24%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+#intro-video {
+    height: 0px;
+  }
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
+.detalhes_pokemon {
+    position: absolute;
+    bottom: 15%;
+    left: 75%;
+    transform: translate(-57%, 0);
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+    font-variant: traditional;
+}
+.pokedex.mobile {
+    display: none; /* Esconde a imagem mobile por padrão */
+  }
+  @media only screen and (max-width: 2532px) and (min-height: 1170px),
+  only screen and (max-width: 2340px) and (min-height: 1080px) {
+
+/* Esconde a imagem desktop em dispositivos menores */
+.pokedex.desktop {
+display: none; 
+}
+
+/* Exibe a imagem mobile em dispositivos menores */
+.pokedex.mobile {
+display: block; 
+}
+
+.pokemon__image {
+position: absolute;
+bottom: 60%;
+left: 53%;
+transform: translate(-63%, 20%);
+height: 14%;
+}
+
+.buttons {
+position: absolute;
+bottom: 35%;
+left: 50%;
+width: 44%;
+transform: translate(-57%, 0);
+display: flex;
+gap: 20px;
+row-gap: 20px;
+column-gap: 20px;
+}
+
+.button {
+width: 50%;
+padding: 4%;
+border: 2px solid #000;
+border-radius: 5px;
+font-size: 35px;
+font-weight: 600;
+color: white;
+background-color: #444;
+box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.detalhes_pokemon {
+position: absolute;
+bottom: 18%;
+left: 45%;
+transform: translate(-57%, 0);
+gap: 20px;
+font-size: 30px;
+color: white;
+font-variant: traditional;
+}
+
+.info_pokemon {
+position: absolute;
+font-weight: 600;
+color: #ffffff;
+top: 54%;
+right: 25%;
+font-size: 34px;
+}
+
+.form {
+position: absolute;
+top: 53.5%;
+left: 15.5%;
+}
+
+.pesquisa {
+padding: 4%;
+outline: none;
+width: 280px;
+font-size: 32px;
+}
+
+#gif-overlay {
+    position: fixed; /* Fixa o overlay na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 86%;
+    display: flex; /* Centraliza o conteúdo do overlay */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+
+  }
+
+  #intro-video {
+    height: 1640px;
+  }
+}
