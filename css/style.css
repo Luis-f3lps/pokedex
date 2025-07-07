@@ -102,7 +102,7 @@ main {
     display: none; /* Esconde a imagem mobile por padrão */
   }
   @media only screen and (max-width: 2532px) and (min-height: 1170px),
-  only screen and (max-width: 2340px) and (min-height: 1080px) {
+  only screen and (max-width: 2340px) and (min-height: 480px) {
 
 /* Esconde a imagem desktop em dispositivos menores */
 .pokedex.desktop {
