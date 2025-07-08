@@ -101,8 +101,9 @@ main {
 .pokedex.mobile {
     display: none; /* Esconde a imagem mobile por padrão */
   }
-  @media only screen and (max-width: 2532px) and (min-height: 1170px),
-  only screen and (max-width: 2340px) and (min-height: 480px) {
+
+@media only screen and (max-width: 412px) and (min-height: 892px), (max-width:375px) and (min-height:667px), (max-width:390px) and (min-height:844px), (max-width:393px) and (min-height:851px), (max-width:412px) and (min-height:915px), (max-width:414px) and (min-height:896px), (max-width:428px) and (min-height:926px), (max-width:667px) and (min-height:375px), (max-width:844px) and (min-height:390px), (max-width:851px) and (min-height:393px), (max-width:915px) and (min-height:412px), (max-width:896px) and (min-height:414px), (max-width:926px) and (min-height:428px) {
+  /* Seus estilos aqui */
 
 /* Esconde a imagem desktop em dispositivos menores */
 .pokedex.desktop {
